@@ -1,6 +1,6 @@
-package com.crystal.examples;
+package com.crystal.examples.oop;
 
-public class Manager extends Employee{
+public class Manager extends Employee {
 
     private Employee[] reports;
     Manager(){}

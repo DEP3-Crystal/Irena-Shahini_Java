@@ -1,6 +1,6 @@
-package com.crystal.examples;
+package com.crystal.examples.oop;
 
-public class Employee extends Person{
+public class Employee extends Person {
     public String role;
     public String department;
     public int yearsOfExperiences;

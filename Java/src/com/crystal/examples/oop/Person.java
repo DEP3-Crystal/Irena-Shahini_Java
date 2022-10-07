@@ -1,4 +1,4 @@
-package com.crystal.examples;
+package com.crystal.examples.oop;
 
 public abstract class  Person {
     public int id;

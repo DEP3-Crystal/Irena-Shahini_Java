@@ -1,4 +1,4 @@
-package com.crystal.examples;
+package com.crystal.examples.oop;
 
 public class Test {
     public static void main(String[] args){
