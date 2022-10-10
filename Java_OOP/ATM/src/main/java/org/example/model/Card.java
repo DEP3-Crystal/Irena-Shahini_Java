@@ -5,19 +5,23 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
 public class Card {
-    private final int cartNo;
+    private final int cardNo;
     private final String cardType;
-    private int PIN;
+    private int pin;
 
-     public Card(int cartNo, String cardType, int PIN) {
-         this.cartNo = cartNo;
+     public Card(int cardNo, String cardType, int pin) {
+         this.cardNo = cardNo;
          this.cardType = cardType;
-         if (PIN >= 1000 && PIN <= 9999) {
-             this.PIN = PIN;
+         if (pin >= 1000 && pin <= 9999) {
+             this.pin = pin;
          }else System.out.println("Wrong PIN!");
          try {
              Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/atm", "root", "MySQLPass");
-             PreparedStatement preparedStmt = connection.prepareStatement("INSERT INTO card (cardNo, CardType, pin) VALUES (cardNo, cardType, pin)");
+             PreparedStatement preparedStmt = connection.prepareStatement(
+             "INSERT INTO `atm`.`card` (`cardNo`, `cardType`, `pin`) VALUES (?,?,?)" );
+             preparedStmt.setInt    (1, cardNo);
+             preparedStmt.setString (2, cardType);
+             preparedStmt.setInt    (3, pin);
              preparedStmt.execute();
          }catch(Exception e){
              System.out.println(e);
@@ -28,11 +32,15 @@ public class Card {
         return cardType;
     }
 
-    public int getCartNo() {
-        return cartNo;
+    public int getCardNo() {
+        return cardNo;
     }
 
-    public void setPIN(int PIN) {
-        this.PIN = PIN;
+    public int getPin() {
+        return pin;
+    }
+
+    public void setPin(int pin) {
+        this.pin = pin;
     }
 }

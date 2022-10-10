@@ -19,7 +19,12 @@ public class Person {
         this.lastname = lastname;
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/atm", "root", "MySQLPass");
-            PreparedStatement preparedStmt = connection.prepareStatement("INSERT INTO person (idPerson, email, firstname, lastname) VALUES (idPerson, email, firstname, lastname)");
+            PreparedStatement preparedStmt = connection.prepareStatement(
+                    "INSERT INTO `atm`.`person` (`idPerson`, `email`, `firstname`,`lastname`) VALUES (?,?,?,?)" );
+            preparedStmt.setInt    (1, idPerson);
+            preparedStmt.setString (2, email);
+            preparedStmt.setString (3, firstname);
+            preparedStmt.setString (4, lastname);
             preparedStmt.execute();
         }catch(Exception e){
             System.out.println(e);
