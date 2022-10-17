@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/Java_OOP/pom.xml" />
         <option value="$PROJECT_DIR$/ATM/pom.xml" />
+        <option value="$PROJECT_DIR$/Threads/pom.xml" />
+        <option value="$PROJECT_DIR$/RandomOOP/pom.xml" />
       </list>
     </option>
   </component>

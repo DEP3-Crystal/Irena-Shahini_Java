@@ -2,7 +2,6 @@ package com.crystal.java.file;
 
 import com.crystal.java.DataSource;
 import com.crystal.java.PersonSelector;
-
 import java.util.Random;
 
 public class FilePersonSelector extends PersonSelector {
@@ -22,3 +21,4 @@ public class FilePersonSelector extends PersonSelector {
 
     }
 }
+
