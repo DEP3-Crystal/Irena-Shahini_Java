@@ -15,7 +15,7 @@ public class FileDataSource implements DataSource {
         String line = "";
         try {
 //parsing a CSV file into BufferedReader class constructor
-            BufferedReader br = new BufferedReader(new FileReader("C:/Users/HP/IdeaProjects/OOP/Java_OOP/src/main/resources/data.csv"));
+            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\HP\\Crystal\\Irena-Shahini_Java\\Java_OOP\\RandomOOP\\src\\main\\resources\\data.csv"));
             while ((line = br.readLine()) != null)
             {
                 persons.add((new Person(Integer.parseInt(line.split(",")[0]), line.split(",")[1])));
