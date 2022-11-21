@@ -1,0 +1,9 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(´Áçß
+S	java:S106
+"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Â²Üˆıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(éÛŠÍûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ù÷Ç÷
+<	java:S131""Add a default case to this switch.(¾«œÛıÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(’²ÿ­ûÿÿÿÿ

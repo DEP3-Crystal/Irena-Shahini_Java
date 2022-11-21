@@ -1,0 +1,8 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÅÆÜıÿÿÿÿ8úÄÄø¾0
+X	java:S125"<This block of commented-out lines of code should be removed.(İ„Öû8ûÄÄø¾0
+X	java:S125"<This block of commented-out lines of code should be removed.(»·×û8ıÄÄø¾0
+f
+java:S1128"IRemove this unused import 'com.crystal.java.memory.MemoryPersonSelector'.(û‰ƒ›8ˆÅÄø¾0
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(€àğÕúÿÿÿÿ8‰ÅÄø¾0
